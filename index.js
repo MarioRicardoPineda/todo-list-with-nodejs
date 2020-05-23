@@ -1,5 +1,6 @@
-
+const color = require('colors')
 const argv = require('./config/yargs').argv 
+const todo = require('./TODO/todo-list')
 
 
 let command = argv._[0]
@@ -7,15 +8,30 @@ let command = argv._[0]
 switch (command) {
   
   case 'create':
-    console.log(argv.description)
+    todo.createTodo( argv.description )
     break;
 
   case 'read':
-    console.log('Listar los algo por hacer')
+
+    let list = todo.getList()
+
+    for (const l of list) {
+      console.log('==========tarea=========='.green)
+      console.log( l.description.yellow )
+      console.log( l.complete )
+      console.log('========================='.green)
+    }
+
     break;
 
   case 'update':
-    console.log(argv.description)
+    let update = todo.update( argv.description, argv.complete )
+    console.log(update) 
+    break;
+
+  case 'delete':
+    let deleteTodo = todo.deleteTodo( argv.description )
+    console.log(deleteTodo) 
     break;
 
   default:

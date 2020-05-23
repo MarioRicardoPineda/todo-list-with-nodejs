@@ -22,8 +22,10 @@
   },
   "homepage": "https://github.com/MarioRicardoPineda/todo-list-with-nodejs#readme",
   "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
     "colors": "^1.4.0",
-    "nodemon": "^2.0.4",
     "yargs": "^15.3.1"
   }
 }
