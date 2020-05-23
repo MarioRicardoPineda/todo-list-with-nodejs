@@ -1,0 +1,29 @@
+{
+  "name": "todo-list",
+  "version": "0.0.1",
+  "description": "Una lista de tareas hecha en nodejs",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarioRicardoPineda/todo-list-with-nodejs.git"
+  },
+  "keywords": [
+    "TODO",
+    "List",
+    "task"
+  ],
+  "author": "Ricardo Pineda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarioRicardoPineda/todo-list-with-nodejs/issues"
+  },
+  "homepage": "https://github.com/MarioRicardoPineda/todo-list-with-nodejs#readme",
+  "devDependencies": {
+    "colors": "^1.4.0",
+    "nodemon": "^2.0.4",
+    "yargs": "^15.3.1"
+  }
+}
