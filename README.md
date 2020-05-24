@@ -52,4 +52,4 @@ node index delete --description "ej: Mi Primera Tarea"
 
 **NOTA :**
 
-Igual que en el comando 'Update' la descripción debe ser igaul a la que deseas eliminar.
+Igual que en el comando 'Update' la descripción debe ser igaul a la que deseas eliminar
